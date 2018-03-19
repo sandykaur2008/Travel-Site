@@ -1,0 +1,250 @@
+/*Broad to specific order*/
+/*Reset*/
+html, body, header, h1, h2, p, 
+a, img, ol, ul, li, article, aside, 
+figure, figcaption, header, 
+main, nav, section {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+}
+
+/*html & body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; 
+}
+
+body, html {
+    height: 100%;
+}
+
+/*main - including general settings for ul and h#*/
+h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+main {
+    display: block;
+    padding-bottom: 60px;
+}
+
+ul {
+    list-style-type: none; 
+}
+
+/*header*/ 
+header {
+    height: 150px; 
+}
+
+.navbar-brand {
+    font-size: 3em; 
+    padding-top: 30px;
+}
+
+.container .navbar-nav {
+    padding-top: 30px; 
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
+    text-decoration: underline; 
+}
+
+.container .navbar-nav a, i{
+    display: inline;
+    padding: 0px 3px 0px 3px;
+}
+
+.container .navbar-nav li a {
+    color: white;
+}
+
+.container .navbar-nav li a:hover {
+    color: white;
+    text-decoration: underline; 
+}
+
+/*header and footer*/
+.glyphicon {
+    padding: 0px 3px 0px 10px;
+    color: white;
+}
+
+.navbar {
+    background-color: black; 
+}
+
+.navbar a {
+    color: white;
+}
+
+/*section - regions of world*/
+section a, a:hover {
+    color: black;
+}
+
+.row {
+    padding-bottom: 20px; 
+}
+
+/*footer*/
+footer a:hover {
+    color: white;
+}
+
+.navbar-static-bottom {
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 0;
+}
+
+.navbar-static-bottom li {
+    display: inline;
+}
+
+/*.navbar-static-bottom ul {
+    padding: 20px 0px 0px 0px;
+}*/
+
+
+
+/*.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+#wrapper {
+    padding-right: 250px;
+    transition: all 0.4s ease 0s;
+  }
+  
+  #sidebar-wrapper {
+    margin-right: -250px;
+    right: 250px;
+    width: 250px;
+    background: #CCC;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+  }
+  
+  .container {
+    width: 100%;
+  }
+
+header h1 {
+    clear: right;
+    padding-left: 40%;
+    padding-bottom: 5px;
+    font: normal bold 20px Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+header ul {
+    padding-top: 15px; 
+}
+
+.navbar-default {
+    background: white url(../images/sky.jpg) left repeat;
+}
+
+.well {
+    background: lightgray;
+}
+
+section {
+    padding: 0px 0px 30px 0px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section li {
+    padding: 10px 0px;
+}
+
+section h2 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+article img {
+    float: left;
+    clear: left;
+}
+
+article figcaption {
+    padding: 10px 0px 10px 0px;
+    clear: left;
+}
+
+article figure {
+    padding: 0px 0px 20px 0px;
+}
+
+.glyphicon {
+    padding: 0px 3px 0px 10px;
+}
+
+#AboutMe {
+    padding: 0px 20px 0px 0px;
+}
+
+.navbar-static-bottom {
+    padding: 20px 0px 0px 0px;
+}
+
+.FooterWIssues {
+    position: absolute;
+    bottom: 0;
+}
+
+a:link {
+    color: gray;
+}
+
+a:visited {
+    color: mediumpurple;
+}
+
+a:hover {
+    color: blue;
+}
+
+label, textarea, input {
+    display: block;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
+
+textarea, input {
+    margin: 0px 0px 10px 0px;
+}*/
+
+
+
+
+
