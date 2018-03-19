@@ -1,17 +1,59 @@
-/*Broad to specific order*/
-/*Reset*/
-html, body, header, h1, h2, p, 
-a, img, ol, ul, li, article, aside, 
-figure, figcaption, header, 
-main, nav, section {
- margin: 0;
- padding: 0;
- border: 0;
- font-size: 100%;
- font: inherit;
+/*Reset
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-/*html & body*/
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*html & body settings*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative; 
@@ -21,7 +63,7 @@ body, html {
     height: 100%;
 }
 
-/*main - including general settings for ul and h#*/
+/*main - including settings for h#*/
 h2 {
     font-size: 2em;
     text-align: center;
@@ -35,10 +77,6 @@ h3 {
 main {
     display: block;
     padding-bottom: 60px;
-}
-
-ul {
-    list-style-type: none; 
 }
 
 /*header*/ 
@@ -98,6 +136,11 @@ footer a:hover {
     color: white;
 }
 
+.AboutContact {
+    position: relative;
+    min-height: 100%;
+}
+
 .navbar-static-bottom {
     padding: 15px 0px 0px 0px;
     margin-bottom: 0;
@@ -107,16 +150,12 @@ footer a:hover {
     display: inline;
 }
 
-.AboutContact {
-    position: relative;
-    min-height: 100%;
-}
-
 #AboutPage, #ContactPage {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
 /*section & articles*/
 section a, a:hover {
     color: black;
@@ -126,11 +165,8 @@ section a, a:hover {
     padding-bottom: 20px; 
 }
 
-.CountryPages img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px; 
+.SidebySide {
+    text-align: center; 
 }
 
 .CountryPages figcaption {
@@ -139,12 +175,16 @@ section a, a:hover {
     text-align: center;
     font-style: italic; 
 }
-.CountryPages p {
-    padding-bottom: 30px;
+
+.CountryPages img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px; 
 }
 
-.SidebySide {
-    text-align: center; 
+.CountryPages p {
+    padding-bottom: 30px;
 }
 
 .SidebySide img {
@@ -153,10 +193,7 @@ section a, a:hover {
     height: 350px;
 }
 
-label, textarea, input {
-    display: block;
-}
-
+/*Forms*/
 textarea {
     width: 300px;
     height: 200px;
@@ -166,136 +203,9 @@ textarea, input {
     margin: 0px 0px 10px 0px;
 }
 
-/*.navbar-static-bottom ul {
-    padding: 20px 0px 0px 0px;
-}*/
-
-
-
-/*.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-#wrapper {
-    padding-right: 250px;
-    transition: all 0.4s ease 0s;
-  }
-  
-  #sidebar-wrapper {
-    margin-right: -250px;
-    right: 250px;
-    width: 250px;
-    background: #CCC;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-    z-index: 1000;
-    transition: all 0.4s ease 0s;
-  }
-  
-  .container {
-    width: 100%;
-  }
-
-header h1 {
-    clear: right;
-    padding-left: 40%;
-    padding-bottom: 5px;
-    font: normal bold 20px Arial, Helvetica, sans-serif;
-    color: gray;
-}
-
-header ul {
-    padding-top: 15px; 
-}
-
-.navbar-default {
-    background: white url(../images/sky.jpg) left repeat;
-}
-
-.well {
-    background: lightgray;
-}
-
-section {
-    padding: 0px 0px 30px 0px;
-}
-
-section ul {
-    list-style-type: none;
-}
-
-section li {
-    padding: 10px 0px;
-}
-
-section h2 {
-    font-weight: bold;
-    font-style: italic;
-}
-
-article img {
-    float: left;
-    clear: left;
-}
-
-article figcaption {
-    padding: 10px 0px 10px 0px;
-    clear: left;
-}
-
-article figure {
-    padding: 0px 0px 20px 0px;
-}
-
-.glyphicon {
-    padding: 0px 3px 0px 10px;
-}
-
-#AboutMe {
-    padding: 0px 20px 0px 0px;
-}
-
-.navbar-static-bottom {
-    padding: 20px 0px 0px 0px;
-}
-
-.FooterWIssues {
-    position: absolute;
-    bottom: 0;
-}
-
-a:link {
-    color: gray;
-}
-
-a:visited {
-    color: mediumpurple;
-}
-
-a:hover {
-    color: blue;
-}
-
 label, textarea, input {
     display: block;
 }
-
-textarea {
-    width: 300px;
-    height: 200px;
-}
-
-textarea, input {
-    margin: 0px 0px 10px 0px;
-}*/
-
-
 
 
 
