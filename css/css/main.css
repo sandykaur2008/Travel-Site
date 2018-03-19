@@ -107,6 +107,16 @@ footer a:hover {
     display: inline;
 }
 
+.AboutContact {
+    position: relative;
+    min-height: 100%;
+}
+
+#AboutPage, #ContactPage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 /*section & articles*/
 section a, a:hover {
     color: black;
@@ -120,10 +130,15 @@ section a, a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
-    padding-top: 20px; 
+    padding-top: 5px; 
 }
 
+.CountryPages figcaption {
+    padding-bottom: 20px; 
+    padding-top: 3px;
+    text-align: center;
+    font-style: italic; 
+}
 .CountryPages p {
     padding-bottom: 30px;
 }
@@ -134,6 +149,21 @@ section a, a:hover {
 
 .SidebySide img {
     display: inline-block;
+    width:  300px;
+    height: 350px;
+}
+
+label, textarea, input {
+    display: block;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
+
+textarea, input {
+    margin: 0px 0px 10px 0px;
 }
 
 /*.navbar-static-bottom ul {
