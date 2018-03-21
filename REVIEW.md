@@ -18,6 +18,7 @@
 * alternatively, consider including third-party CSS from a CDN
   * https://www.bootstrapcdn.com/
   * it spares you from having to manage it in your repo
+* consider consistent image extensions. i'm seeing use of .jpg and .jpeg
 ## CSS
 * you can probably remove the reset css at the beginning
   * bootstrap already does this with normalize.css. See: http://getbootstrap.com/docs/3.3/css/#overview-normalize
