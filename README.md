@@ -1,6 +1,6 @@
 Project Title
 
-This project is caleld "My Travels" and the aim is to simply get myself comfortable with HTML and CSS, in conjunction with Bootstrap and Git. I just created a blog with entries on countries I have visited. 
+This project is called "My Travels" and the aim is to simply get myself comfortable with HTML and CSS, in conjunction with Bootstrap and Git. I just created a blog with entries on countries I have visited. 
 
 Getting Started
 
@@ -34,4 +34,4 @@ Just a note on images - images that are not originally mine are free for use and
 
 Acknowledgments
 
-Thanks to Google and Stack Overflow, you've always believed in me  
+Thanks, Mark Castillo, for reviewing and giving me tips! 
