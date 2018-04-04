@@ -15,6 +15,14 @@ To simply view:
 # Prerequisites
 You will need a text editor and a working browser. 
 
+You will also need Sass: https://sass-lang.com/install 
+
+## To build css from scss files
+
+To run Sass from the command line, make sure you're in root directory of repo and execute:
+
+```sass scss/main_updated.scss css/main_updated.css```
+
 # Built With
 - Visual Studio Code 1.21.1
 - Bootstrap 3.3.7
