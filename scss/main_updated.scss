@@ -1,1 +1,213 @@
+//imports
 @import "partials/reset"; 
+
+//extends
+%text-align {
+    text-align: center;
+}
+
+//mixins
+@mixin text-align {
+    text-align: center;
+}
+
+@mixin display($x: block) {
+    display: $x;
+}
+
+@mixin color($x: white) {
+    color: $x;
+}
+
+@mixin dimensions($width: 100%, $height: 100%) {
+    width: $width;
+    height: $height;
+}
+
+@mixin respond-to($val, $query) {
+    @media screen and ($val: $query) {
+        @content;
+    }
+}
+
+/* html and body*/
+html {
+    @include dimensions;
+}
+
+body {
+    @include dimensions;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; 
+}
+
+/*main & h#*/
+h2 {
+    font-size: 2em;
+    @extend %text-align;
+    padding: 2% 0%;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+main {
+    @include display;
+    padding-bottom: 5%;
+}
+
+/*header*/ 
+header {
+    height: 20%; 
+}
+
+.navbar-brand {
+    font-size: 3em; 
+    padding-top: 3%;
+    .navbar-default & {
+        @include color;
+        &:hover {
+            @include color;
+            text-decoration: underline; 
+        }
+    }
+}
+
+.container .navbar-nav {
+    padding-top: 3%;
+    a, i {
+        @include display(inline);
+    }
+    li a {
+        @include color;
+        &:hover {
+            @include color;
+            text-decoration: underline; 
+        }
+    }
+}
+
+.container .navbar-right {
+    @include respond-to(max-width, 767px) {
+        @include display(none);
+    }
+}
+
+/*header and footer*/
+.glyphicon {
+    @include color;
+    footer & {
+        padding: 0% 0.3% 0% 1%;
+    }
+}
+
+.navbar {
+    background-color: black; 
+    border-radius: 0%; 
+    a {
+        @include color;
+    }
+}
+
+/*footer*/
+footer a:hover {
+    @include color;
+}
+
+.about-contact {
+    position: relative;
+    min-height: 100%;
+}
+
+.navbar-static-bottom {
+    padding: 1.2% 0% 0% 0%;
+    margin-bottom: 0;
+    li {
+        @include display(inline);
+    }
+}
+
+#about-page, #contact-page {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*content*/
+img {
+    max-width: 100%;
+    @include respond-to(max-width, 991px) {
+        @include display;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+section a {
+    @include color(black);
+    @include respond-to(max-width, 991px) {
+        @include text-align;
+    }
+    &:hover {
+        @include color(black);
+    }
+}
+
+section h3 {
+    @include respond-to(max-width, 991px) {
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+}
+
+.row {
+    padding-bottom: 1.6%; 
+    @include respond-to(max-width, 991px) {
+        padding-bottom: 0;
+    }
+}
+
+.country-page {
+    figcaption {
+        padding-bottom: 1.6%; 
+        padding-top: 0.3%;
+        @extend %text-align;
+        font-style: italic; 
+    }
+    img {
+        @include display;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0.4%; 
+        @include dimensions(25%, 30%);
+    }
+    p {
+        padding-bottom: 2.4%;
+    }
+}
+
+.side-side {
+    @extend %text-align;
+    img {
+    @include display(inline-block);
+    @include dimensions(25%, 30%);
+    }
+}
+
+/*Forms*/
+textarea {
+    @include dimensions(40%, 0%);
+    padding-bottom: 20%;
+}
+
+textarea, input {
+    margin: 0% 0% 0.79% 0%;
+}
+
+label, textarea, input {
+    @include display;
+}
+
+  
+  

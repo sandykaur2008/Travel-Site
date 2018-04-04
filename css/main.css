@@ -178,9 +178,9 @@ section a, a:hover {
     font-style: italic; 
 }
 
-/*img {
+img {
     max-width: 100%;
-}*/
+}
 
 .country-page img {
     display: block;
