@@ -3,8 +3,13 @@
   <head>
     <title>Home|My Travels</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/css/bootstrap.css">
-    <link rel="stylesheet" href="css/css/main.css"> 
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/main_updated.css"> 
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="navbar navbar-default navbar-static-top">
@@ -12,9 +17,9 @@
         <a href="index.html" class="navbar-brand">My Travels</a>
         <ul class="nav navbar-nav navbar-right">
           <li><i class="glyphicon glyphicon-plus"></i></li>
-          <li><a href="About/index.html">About</a></li>
+          <li><a href="html/about/index.html">About</a></li>
           <li><i class="glyphicon glyphicon-envelope"></i></li>
-          <li><a href="Contact/index.html">Contact</a></li>
+          <li><a href="html/contact/index.html">Contact</a></li>
         </ul> 
       </div> 
     </header> 
@@ -29,8 +34,8 @@
           <div class="row">
             <article>
               <div class="col-md-12">
-                <a href="countries/India/index.html">
-                  <img src="images/IndiaGoldenTemple.jpeg" width="300" height="300" alt="Golden Temple in India">
+                <a href="html/india/index.html">
+                  <img srcset="images/india/india_golden_temple.jpeg 1x, images/india/india_golden_temple_double.jpeg 2x" alt="Golden Temple in India">
                   <h3>India</h3> 
                 </a>
               </div>
@@ -46,24 +51,24 @@
           <div class="row">      
             <article>       
               <div class="col-md-4">
-                <a href="countries/Argentina/index.html">
-                  <img src="images/ArgentinaLaBoca.jpg" width="300" height="300" alt="La Boca Neighborhood in Buenos Aires">
+                <a href="html/argentina/index.html">
+                  <img src="images/argentina/argentina_la_boca.jpeg" alt="La Boca Neighborhood in Buenos Aires">
                   <h3>Argentina</h3>
                 </a>
               </div>
             </article>
             <article>   
               <div class="col-md-4"> 
-                <a href="countries/Canada/index.html">
-                  <img src="images/CanadaVancouverSkyline.jpg" width="300" height="300" alt="Vancouver Skyline">
+                <a href="html/canada/index.html">
+                  <img src="images/canada/canada_vancouver_skyline.jpeg" alt="Vancouver Skyline">
                   <h3>Canada</h3>
                 </a>
               </div>
             </article>
             <article>
               <div class="col-md-4">
-                <a href="countries/Uruguay/index.html">
-                  <img src="images/UruguayPlazaIndependencia.jpg" width="300" height="300" alt="Plaza Independencia in Montevideo, Uruguay">
+                <a href="html/uruguay/index.html">
+                  <img src="images/uruguay/uruguay_plaza_independencia.jpeg" alt="Plaza Independencia in Montevideo, Uruguay">
                   <h3>Uruguay</h3>
                 </a>
               </div> 
@@ -79,24 +84,24 @@
           <div class="row">
             <article>
               <div class="col-md-4">
-                <a href="countries/France/index.html">
-                  <img src="images/FranceEiffel.jpeg" width="300" height="300" alt="Eiffel Tower">
+                <a href="html/france/index.html">
+                  <img src="images/france/france_eiffel.jpeg" alt="Eiffel Tower">
                   <h3>France</h3>
                 </a>
               </div>  
             </article>
             <article>
               <div class="col-md-4">  
-                <a href="countries/Germany/index.html">
-                  <img src="images/GermanyBrandenburgGate.jpg" width="300" height="300" alt="Brandenburg Gate in Berlin">
+                <a href="html/germany/index.html">
+                  <img src="images/germany/germany_brandenburg_gate.jpeg" alt="Brandenburg Gate in Berlin">
                   <h3>Germany</h3>
                 </a>
               </div>
             </article>
             <article>  
               <div class="col-md-4"> 
-                <a href="countries/Greece/index.html">
-                  <img src="images/GreeceAcropolis1.jpg" width="300" height="300" alt="Image of Acropolis in Rhodes, Greece">
+                <a href="html/greece/index.html">
+                  <img src="images/greece/greece_acropolis_1.jpeg" alt="Image of Acropolis in Rhodes, Greece">
                   <h3>Greece</h3>
                 </a>
               </div>
@@ -105,24 +110,24 @@
           <div class="row"> 
             <article>
               <div class="col-md-4">     
-                <a href="countries/Ireland/index.html">
-                  <img src="images/IrelandGuinness.jpg" width="300" height="300" alt="Image of Guinness factory in Dublin">
+                <a href="html/ireland/index.html">
+                  <img src="images/ireland/ireland_guinness_copy.jpeg" alt="Image of Guinness factory in Dublin">
                   <h3>Ireland</h3>
                 </a>
               </div>
             </article>  
             <article> 
               <div class="col-md-4">
-                <a href="countries/Italy/index.html">
-                  <img src="images/ItalyPisa.jpg" width="300" height="300" alt="Leaning tower of Pisa">
+                <a href="html/italy/index.html">
+                  <img src="images/italy/italy_pisa.jpeg" alt="Leaning tower of Pisa">
                   <h3>Italy</h3>
                 </a>
               </div>
             </article>
             <article>   
               <div class="col-md-4"> 
-                <a href="countries/Netherlands/index.html">
-                  <img src="images/NetherlandsKinderdijk.jpg" width="300" height="300" alt="Windmills of Kinderdijk, in Holland">
+                <a href="html/netherlands/index.html">
+                  <img src="images/netherlands/netherlands_kinderdijk.jpeg" alt="Windmills of Kinderdijk, in Holland">
                   <h3>The Netherlands</h3>
                 </a>
               </div>
@@ -131,16 +136,16 @@
           <div class="row"> 
             <article>
               <div class="col-md-4"> 
-                <a href="countries/Spain/index.html">
-                  <img src="images/SpainSagradaFamilia1.jpg" width="300" height="300" alt="Sagrada Familia in Barcelona">
+                <a href="html/spain/index.html">
+                  <img src="images/spain/spain_sagrada_familia_1.jpeg" alt="Sagrada Familia in Barcelona">
                   <h3>Spain</h3>
                 </a>
               </div>
             </article>
             <article> 
               <div class="col-md-4">   
-                <a href="countries/UnitedKingdom/index.html">
-                  <img src="images/UKTowerBridge.jpg" width="300" height="300" alt="Tower Bridge in London">
+                <a href="html/uk/index.html">
+                  <img src="images/uk/uk_tower_bridge.jpeg" alt="Tower Bridge in London">
                   <h3>United Kingdom</h3>
                 </a> 
               </div>
@@ -156,8 +161,8 @@
           <div class="row">
             <article>
               <div class="col-md-4"> 
-                <a href="countries/Egypt/index.html">
-                  <img src="images/EgyptPyramid.jpg" width="300" height="300" alt="Pyramids of Giza">
+                <a href="html/egypt/index.html">
+                  <img src="images/egypt/egypt_pyramid_copy.jpeg" alt="Pyramids of Giza">
                   <h3>Egypt</h3>
                 </a>
               </div>
@@ -170,9 +175,9 @@
       <div class="navbar navbar-static-bottom">
         <ul>
           <li><i class="glyphicon glyphicon-plus"></i></li>
-          <li><a href="About/index.html">About</a></li>
+          <li><a href="html/about/index.html">About</a></li>
           <li><i class="glyphicon glyphicon-envelope"></i></li>
-          <li><a href="Contact/index.html">Contact</a></li>
+          <li><a href="html/contact/index.html">Contact</a></li>
         </ul> 
       </div> 
     </footer>

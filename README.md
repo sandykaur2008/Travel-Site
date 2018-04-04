@@ -1,37 +1,38 @@
-Project Title
+# Project Title
+This project is called "My Travels" and the aim is to simply familiarize myself with HTML, CSS, Bootstrap, Git, and Sass. I just created a blog with entries on countries I have visited. 
 
-This project is caleld "My Travels" and the aim is to simply get myself comfortable with HTML and CSS, in conjunction with Bootstrap and Git. I just created a blog with entries on countries I have visited. 
-
-Getting Started
-
-If you want to be part of this, please request to be a collaborator on Github. username/repo name = sandykaur2008/training-lol-
-
+# Getting Started
 This isn't meant to be a project for collaboration - more like a way for me to log my frustrations as I go through the process. 
 
-Prerequisites
+Nonetheless, to contribute:
+- Navigate to this repo: sandykaur2008/Travel-Site
+- Follow these instructions: https://help.github.com/articles/fork-a-repo/
 
-Aside from Git, you need to have a text editor (like Visual Studio Code) and a working browser. That's really it. To get setup with Git: 
+To simply view: 
+- Navigate to this repo: sandykaur2008/Travel-Site
+- Follow these instructions: https://help.github.com/articles/cloning-a-repository/
 
-https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup 
+# Prerequisites
+You will need a text editor and a working browser. 
 
-To get set up with Visual Studio Code:
+You will also need Sass: https://sass-lang.com/install 
 
-https://code.visualstudio.com 
+## To build css from scss files
 
+To run Sass from the command line, make sure you're in root directory of repo and execute:
 
-Built With
+```sass scss/main_updated.scss css/main_updated.css```
 
-Visual Studio Code - The text editor used 
-Bootstrap files - for responsive web design 
+# Built With
+- Visual Studio Code 1.21.1
+- Bootstrap 3.3.7
+- Ruby Sass 3.5.6 
 
-Authors
-
+# Authors
 Satinder Kaur 
 
-License
+# License
+Just a note on images - images that are not originally mine are free for use and modification via Google Images. 
 
-Just a note on images - images that are not originally mine are free for use and modification, via Google Images. 
-
-Acknowledgments
-
-Thanks to Google and Stack Overflow, you've always believed in me  
+# Acknowledgments
+Thanks, @github/markalexandercastillo, for reviewing and giving me tips! :relaxed: 
