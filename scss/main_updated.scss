@@ -28,65 +28,23 @@
 }
 
 /* html and body*/
-html {
+html, body {
     @include dimensions;
 }
 
 body {
-    @include dimensions;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative; 
 }
-
-/*main & h#*/
-h2 {
-    font-size: 2em;
-    @extend %text-align;
-    padding: 2% 0%;
-}
-
-h3 {
-    font-size: 1em;
-}
-
-main {
-    @include display;
-    padding-bottom: 5%;
-}
-
-/*header*/ 
-header {
-    height: 20%; 
-    padding-top: 3%;
-}
-
-header .title {
-    font-size: 3em; 
-    text-decoration: none;
-    @include color;
-    &:hover {
-        @include color;
-        text-decoration: underline; 
-    }
-}
-
-/*
-.container .navbar-right {
-    @include respond-to(max-width, 767px) {
-        @include display(none);
-    }
-}*/
 
 /*header and footer*/
 header, footer {
     background-color: black; 
     li {
-        @include display(inline-block);
-        padding: 0% 5% 0% 5%;
-        margin: 0 5% 0% 5%;
+        @include display(inline);
     }
     a {
         @include color;
+        padding: 0.5em;
         text-decoration: none;
         &:hover {
             text-decoration: underline; 
@@ -94,28 +52,44 @@ header, footer {
     }
 }
 
-header ul {
-    float: right;
-    list-style-type:none;
+/*header*/ 
+header {
+    height: 20%; 
+    padding-top: 3%;
+    .title {
+        font-size: 3em; 
+        text-decoration: none;
+        @include color;
+        &:hover {
+            @include color;
+            text-decoration: underline; 
+        }
+    }
+    li {
+        @include respond-to(max-width, 767px) {
+            @include display(none);
+        }
+    }
+    ul {
+        float: right;
+        list-style-type: none;
+    }
 }
 
-/*footer*/
-footer {
-    bottom: 0;
-    width: 100%;
+/*main & h#*/
+h2 {
+    font-size: 2em;
+    @extend %text-align;
+    padding: 0.5em 0%;
 }
 
-.about-contact {
-    position: relative;
-    min-height: 100%;
+h3 {
+    font-size: 1em;
 }
 
-
-
-#about-page, #contact-page {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+main {
+    min-height: 74%;
+    padding-bottom: 5%;
 }
 
 /*content*/
@@ -130,11 +104,13 @@ img {
 
 section a {
     @include color(black);
+    text-decoration: none;
     @include respond-to(max-width, 991px) {
         @include text-align;
     }
     &:hover {
         @include color(black);
+        text-decoration: underline; 
     }
 }
 
@@ -177,6 +153,19 @@ section h3 {
     @include display(inline-block);
     @include dimensions(25%, 30%);
     }
+}
+
+/*footer*/
+footer {
+    position: relative;
+    min-height: 6%;
+    padding-top: 1em;
+} 
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /*Forms*/
