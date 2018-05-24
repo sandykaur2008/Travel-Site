@@ -3,15 +3,15 @@
   <head>
     <title>{{ title }}|My Travels</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="/index" class="title"> My Travels</a>
+        <a href="{{ url_for('index') }}" class="title"> My Travels</a>
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
         </ul> 
       </div> 
     </header> 
@@ -19,8 +19,8 @@
     <footer>
       <div class="footer">
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
         </ul>  
       </div> 
     </footer>
