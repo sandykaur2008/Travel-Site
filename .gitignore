@@ -1,5 +1,7 @@
-css
+app/static/css
 .sass-cache
 venv
 MyTravels.code-workspace
 .env
+app/__pycache__
+__pycache__
