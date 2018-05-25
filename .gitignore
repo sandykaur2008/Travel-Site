@@ -1,3 +1,8 @@
+app/static/css
 .sass-cache
-css/main_updated.css
-css/main_updated.css.map
+venv
+MyTravels.code-workspace
+.env
+app/__pycache__
+__pycache__
+tests/__pycache__

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <main>
+    <div class="container"> 
+      <div class="row">
+        <div class="col-12"> 
+          <h2>Germany</h2> 
+        </div>
+      </div>
+      <article class="country-page">
+        <div class="row">
+          <div class="col-12">           
+            <figure> 
+              <img src="{{ url_for('static', filename='images/germany_wall_1.jpeg') }}" alt="Piece of Berlin wall">
+              <figcaption>Berlin Wall Today</figcaption>
+            </figure> 
+            <p>I visited Berlin while I was working in France. My friend and I went in late December, so my memories
+              are marred by the most bitter cold I ever did experience. Still, I'm glad I went! It was definitely worth
+              it, especially to see the Berlin Wall in its modern state. I really liked that pieces of it were dispersed 
+              throughout the city. It was actually pretty moving to look at and reflect on.</p>
+            <figure> 
+              <img src="{{ url_for('static', filename='images/germany_holocaust_memorial.jpeg') }}" alt="Berlin's Holocaust Museum"> 
+              <figcaption>The Holocaust Memorial</figcaption>  
+            </figure>
+            <p>I felt similarly about the Holocaust Memorial, which was sobering to walk around in.</p>
+            <figure> 
+              <img src="{{ url_for('static', filename='images/germany_currywurst.jpeg') }}" alt="Currywurst - sausage with ketchup">
+              <figcaption>Mmm, Currywurst *drool*</figcaption>
+            </figure>
+            <p>One thing I remember most about my trip to Berlin is currywurst - I ate so much I thought I was going to be 
+              sick. I regret nothing!</p>
+            <figure> 
+              <img src="{{ url_for('static', filename='images/germany_brandenburg_gate.jpeg') }}" alt="Brandenburg Gate, Berlin">
+              <figcaption>The Brandenburg Gate</figcaption>
+            </figure>
+            <p>We ended up spending the New Year in Berlin, which was a little terrifying, given fireworks
+              are legal. People were setting them off every few seconds and I kept ducking, thinking I was getting shot at. Oh well! 
+              At least there had been a giant fair near the Brandenburg Gate a few days prior, so it made up for it retroactively.</p>
+          </div>
+        </div> 
+      </article>
+    </div> 
+  </main> 
+{% endblock %}
