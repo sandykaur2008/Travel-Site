@@ -171,19 +171,17 @@ footer {
     width: 100%;
 }
 
-/*Forms*/
-textarea {
-    @include dimensions(40%, 0%);
-    padding-bottom: 20%;
+/*Forms and messages*/ 
+span.error {
+    @include color(red);
 }
 
-textarea, input {
-    margin: 0% 0% 0.79% 0%;
+ul.message-ul {
+    list-style-type: none;
 }
 
-label, textarea, input {
-    @include display;
+li.message-li {
+    @include color(blue); 
 }
-
   
   
