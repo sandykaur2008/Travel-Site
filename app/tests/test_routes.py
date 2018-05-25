@@ -1,5 +1,8 @@
 import unittest 
+import trace 
+import sys 
 from app import app
+
 
 class Routes(unittest.TestCase):
     def test_success(self):
@@ -10,3 +13,7 @@ class Routes(unittest.TestCase):
             self.assertEqual(response1.status_code, 200)
             self.assertEqual(response2.status_code, 200)
             self.assertEqual(response3.status_code, 200)
+
+
+if __name__ == '__main__':
+    unittest.main()

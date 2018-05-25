@@ -5,3 +5,4 @@ MyTravels.code-workspace
 .env
 app/__pycache__
 __pycache__
+tests/__pycache__
