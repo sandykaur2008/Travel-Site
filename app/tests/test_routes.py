@@ -1,6 +1,4 @@
 import unittest 
-import trace 
-import sys 
 from app import app
 
 
