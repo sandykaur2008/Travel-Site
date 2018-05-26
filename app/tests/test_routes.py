@@ -3,14 +3,27 @@ from app import app
 
 
 class Routes(unittest.TestCase):
-    def test_success(self):
-        with app.test_client() as client:
-            response1 = client.get('/')
-            response2 = client.get('/about')
-            response3 = client.get('/uruguay')
-            self.assertEqual(response1.status_code, 200)
-            self.assertEqual(response2.status_code, 200)
-            self.assertEqual(response3.status_code, 200)
+    def setUp(self):
+        self.client = app.test_client()
+        app.config['WTF_CSRF_ENABLED'] = False
+
+    def tearDown(self):
+        pass
+    
+    def test_200(self):
+        response1 = self.client.get('/')
+        response2 = self.client.get('/about')
+        response3 = self.client.get('/uruguay')
+        self.assertEqual(response1.status_code, 200)
+        self.assertEqual(response2.status_code, 200)
+        self.assertEqual(response3.status_code, 200)
+    
+    def test_302(self):
+        response = self.client.post('/contact', data={
+            'text': 'some text',
+            'email': 'ex@example.com',
+            'name': 'some name'}, follow_redirects=False)
+        self.assertEqual(response.status_code, 302)
 
 
 if __name__ == '__main__':
