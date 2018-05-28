@@ -1,5 +1,6 @@
 // imports
 @import 'grid/simple-grid';
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 //extends
 %text-align {
@@ -35,15 +36,17 @@ html, body {
     @include dimensions;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/*header and footer*/
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+    color: white;
 }
 
-/*header and footer*/
 header, footer {
     background-color: black; 
     li {
         @include display(inline);
+        margin-left: 1em;
     }
     a {
         @include color;

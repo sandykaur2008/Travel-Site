@@ -27,6 +27,10 @@ class Routes(unittest.TestCase):
             'name': 'some name'}, follow_redirects=False)
         self.assertEqual(response.status_code, 302)
 
+    def test_404(self):
+        response = self.client.get('/doesntexist')
+        self.assertEqual(response.status_code, 404)
+
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main()
