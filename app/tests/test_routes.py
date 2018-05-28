@@ -1,11 +1,13 @@
 import unittest 
-from app import app
+from app import app, mail
 
 
 class Routes(unittest.TestCase):
     def setUp(self):
-        self.client = app.test_client()
+        app.config['TESTING'] = True
         app.config['WTF_CSRF_ENABLED'] = False
+        self.client = app.test_client()
+        mail.init_app(app)
 
     def tearDown(self):
         pass
@@ -27,4 +29,4 @@ class Routes(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
