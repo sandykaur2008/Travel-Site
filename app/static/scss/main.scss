@@ -1,5 +1,6 @@
 // imports
 @import 'grid/simple-grid';
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 //extends
 %text-align {
@@ -35,15 +36,17 @@ html, body {
     @include dimensions;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/*header and footer*/
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+    color: white;
 }
 
-/*header and footer*/
 header, footer {
     background-color: black; 
     li {
         @include display(inline);
+        margin-left: 1em;
     }
     a {
         @include color;
@@ -171,19 +174,17 @@ footer {
     width: 100%;
 }
 
-/*Forms*/
-textarea {
-    @include dimensions(40%, 0%);
-    padding-bottom: 20%;
+/*Forms and messages*/ 
+span.error {
+    @include color(red);
 }
 
-textarea, input {
-    margin: 0% 0% 0.79% 0%;
+ul.message-ul {
+    list-style-type: none;
 }
 
-label, textarea, input {
-    @include display;
+li.message-li {
+    @include color(blue); 
 }
-
   
   
