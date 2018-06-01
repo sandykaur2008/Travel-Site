@@ -2,14 +2,9 @@
 @import 'grid/simple-grid';
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
-//extends
-%text-align {
-    text-align: center;
-}
-
 //mixins
-@mixin text-align {
-    text-align: center;
+@mixin text-align($x: center) {
+    text-align: $x;
 }
 
 @mixin display($x: block) {
@@ -85,8 +80,7 @@ header {
 /*main & h#*/
 h2 {
     font-size: 2em;
-    @extend %text-align;
-    padding: 0.5em 0%;
+    @include text-align;
 }
 
 h3 {
@@ -99,21 +93,24 @@ main {
 }
 
 /*content*/
+div.col-12 {
+    @include text-align;
+    &.contact {
+        @include text-align(left);
+    }
+    &.left {
+        @include text-align(left);
+    }
+}
+
 img {
     max-width: 100%;
-    @include respond-to(max-width, 991px) {
-        @include display;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 section a {
     @include color(black);
     text-decoration: none;
-    @include respond-to(max-width, 991px) {
-        @include text-align;
-    }
+    @include display(inline-block);
     &:hover {
         @include color(black);
         text-decoration: underline; 
@@ -138,26 +135,18 @@ section h3 {
     figcaption {
         padding-bottom: 1.6%; 
         padding-top: 0.3%;
-        @extend %text-align;
         font-style: italic; 
     }
     img {
-        @include display;
-        margin-left: auto;
-        margin-right: auto;
         padding-top: 0.4%; 
         @include dimensions(25%, 30%);
+        @include display();
+        margin-left: auto;
+        margin-right: auto;
     }
     p {
         padding-bottom: 2.4%;
-    }
-}
-
-.side-side {
-    @extend %text-align;
-    img {
-    @include display(inline-block);
-    @include dimensions(25%, 30%);
+        @include text-align(left);
     }
 }
 
