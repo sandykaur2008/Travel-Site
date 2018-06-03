@@ -11,27 +11,58 @@
       <article class="country-page">
         <div class="row">
           <div class="col-12"> 
-            <figure class="side-side">
-              <img src="{{ url_for('static', filename='images/uruguay_green_building.jpeg') }}" alt="A cool green building">
-              <img src="{{ url_for('static', filename='images/uruguay_bench.jpeg') }}" alt="Cool bench in Colonia del Sacramento">
-              <figcaption>Uruguay had interesting architecture - check out this green builing and this bench!</figcaption>
+            <figure>
+              <img srcset="{{ url_for('static', filename='images/uruguay_green_building-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/uruguay_green_building-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/uruguay_green_building-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/uruguay_green_building-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/uruguay_green_building-500.jpg') }}" 
+              alt="A cool green building">
+              <figcaption>Uruguay had interesting architecture - check out this green building!</figcaption>
             </figure> 
-            <p>We went to Uruguay when we went to Argentina, since they border each other. Uruguay may be small,
-              but it was really interesting. We visited Colonia del Sacramento, an ancient village, and Montevideo, 
-              the capital. Colonia del Sacramento had a bunch of buildings that were unlike anything I'd seen before - 
-              even the benches in Colonia were interesting!</p> 
+            <p>We went to Uruguay when we went to Argentina, since they border each
+               other. Uruguay may be small, but it was really interesting. We visited 
+               Colonia del Sacramento, an ancient village, and Montevideo, the capital.
+              Colonia del Sacramento had a bunch of buildings that were unlike 
+              anything I'd seen before.</p>
+            <figure>
+              <img srcset="{{ url_for('static', filename='images/uruguay_bench-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/uruguay_bench-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/uruguay_bench-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/uruguay_bench-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/uruguay_bench-500.jpg') }}" 
+              alt="Cool bench in Colonia del Sacramento">
+              <figcaption>This bench tho</figcaption>
+            </figure>
+            <p>The buildings were interesting, but the benches in Colonia were 
+              something I could not stop staring at - I have never seen such 
+              pretty benches! I think NYC needs to step up its bench game.</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/uruguay_calle_de_los_suspiros.jpeg') }}" alt="Calle de los Suspiros, Colonia del Sacramento">
+              <img class="vertical" srcset="{{ url_for('static', filename='images/uruguay_calle_de_los_suspiros-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/uruguay_calle_de_los_suspiros-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/uruguay_calle_de_los_suspiros-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/uruguay_calle_de_los_suspiros-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/uruguay_calle_de_los_suspiros-375.jpg') }}"
+              alt="Calle de los Suspiros, Colonia del Sacramento">
               <figcaption>Calle de los Suspiros</figcaption>
             </figure>
-            <p>Calle de los Suspiros attracted a lot of tourists and I could see why - there was something romantic 
-              about it!</p>  
+            <p>Calle de los Suspiros attracted a lot of tourists and I could 
+              see why - there was certainly something romantic about it!</p>  
             <figure> 
-              <img src="{{ url_for('static', filename='images/uruguay_plaza_independencia.jpeg') }}" alt="Plaza Independencia, Montevideo">
+              <img sclass="vertical" srcset="{{ url_for('static', filename='images/uruguay_plaza_independencia-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/uruguay_plaza_independencia-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/uruguay_plaza_independencia-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/uruguay_plaza_independencia-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/uruguay_plaza_independencia-375.jpg') }}"
+              alt="Plaza Independencia, Montevideo">
               <figcaption>Plaza Independencia in Montevideo</figcaption>
             </figure>
-            <p>In Montevideo, we walking all over the place and checked out Plaza Independencia. All in all, a nice 
-              place to visit!</p> 
+            <p>In Montevideo, we walking all over the place and checked out 
+              Plaza Independencia. All in all, a nice place to visit!</p> 
           </div>
         </div>
       </article> 

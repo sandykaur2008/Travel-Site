@@ -11,39 +11,97 @@
       <article class="country-page">
         <div class="row">
           <div class="col-12">
-            <p>Egypt was a destination I had been dying to visit for many, many years. My childhood friend is 
-              Egytian and has family in Alexandria, so we'd grown up discussing this trip and were excited when 
-              we were finally able to do it together. </p>
-            <figure class="side-side">  
-              <img src="{{ url_for('static', filename='images/egypt_karnak.jpeg') }}" alt="Karnak Temple, Luxor">
-              <img src="{{ url_for('static', filename='images/egypt_balloon.jpeg') }}" alt="Hot air balloon over Hatshepsut Temple, Luxor">
-              <figcaption>On left, Karnak Temple at night. On right, hot air balloon over Hatshepsut Temple</figcaption>
+            <p>Egypt was a destination I had been dying to visit for many, many
+              years. My childhood friend is Egytian and has family in Alexandria, 
+              so we'd grown up discussing this trip and were excited when 
+              we were finally able to do it together.</p>
+            <figure>  
+              <img class="vertical" srcset="{{ url_for('static', filename='images/egypt_karnak-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/egypt_karnak-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/egypt_karnak-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/egypt_karnak-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/egypt_karnak-375.jpg') }}"
+              alt="Karnak Temple, Luxor">
+              <figcaption>Karnak Temple at night</figcaption>
             </figure> 
-            <p>Our first few days were spent in Luxor, visiting ancient sites like the Hatshepsut and Karnak temples,
-              and befriending locals. My friend, for example, befriended a local boatman who took us out onto the Nile 
-              and helped us get tickets for a hot air balloon tour (which allowed us to see Hatshepsut from above)!</p>
+            <p>Our first few days were spent in Luxor, visiting ancient sites
+              like the Hatshepsut and Karnak temples, the latter of which we 
+              saw at night, when there is an impressive light show in several 
+              languages! It was pretty crazy to think of all the mighty pharaohs
+              that had these temples built in their name. I couldn't help but wonder
+              what it must have been like to have all that power...</p>
+            <figure>
+              <img class="vertical" srcset="{{ url_for('static', filename='images/egypt_balloon-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/egypt_balloon-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/egypt_balloon-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/egypt_balloon-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/egypt_balloon-375.jpg') }}"
+              alt="Hot air balloon over Hatshepsut Temple, Luxor">
+              <figcaption>Hot air balloon over Hatshepsut Temple</figcaption>
+            </figure>
+            <p>As my friend is fluent in Arabic, we were fortunate enough to
+              befriend locals. For example, we befriended a local boatman who 
+              took us out onto the Nile and helped us get tickets for a hot air 
+              balloon tour (which allowed us to see Hatshepsut from above)! He was
+              also kind enough to welcome us to his home and host us for dinner. 
+              The hospitality we experienced was truly something else.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/egypt_alexandria.jpeg') }}" alt="Alexandria coastline">
-              <figcaption>The coastline of Alexandria.</figcaption>
+              <img srcset="{{ url_for('static', filename='images/egypt_alexandria-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/egypt_alexandria-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/egypt_alexandria-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/egypt_alexandria-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/egypt_alexandria-500.jpg') }}"
+              alt="Alexandria coastline">
+              <figcaption>The coastline of Alexandria</figcaption>
             </figure> 
-            <p>After Luxor, we spent time with my friend's family in Alexandria. The family was incredibly sweet and hospitable. 
-            They took us around all over, including to the Citadel of Qaitbay, the Alexandrian library, and to get tea
-            by the sea!</p> 
-            <figure class="side-side"> 
-              <img src="{{ url_for('static', filename='images/egypt_muhammad_ali.jpeg') }}" alt="Muhammad Ali Mosque in Cairo">
-              <img src="{{ url_for('static', filename='images/egypt_museum.jpeg') }}" alt="Outside of the pink Egyptian Museum">
-              <figcaption>The sights of Cairo - Muhammad Ali Mosque on left, Egyptian Museum on right.</figcaption>
-            </figure> 
-            <p>We spent our final days in Cairo and visting the Pyramids of Giza. We visited a bunch of sites in Cairo,
-            including Tahrir Square, which has the Egyptian Museum nearby. Most memorable for me was the Mosque of Muhammad Ali 
-            in the Saladin Citadel.</p> 
+            <p>After Luxor, we spent time with my friend's family in Alexandria. 
+              Her family was incredibly sweet and hospitable. They took us around 
+              all over, including to the Citadel of Qaitbay, the Alexandrian library, 
+              and to get tea by the sea!</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/egypt_pyramid.jpeg') }}" alt="Pyramids of Giza">
-              <figcaption>The sites of Giza - Pyramids and Sphinx.</figcaption>
+              <img srcset="{{ url_for('static', filename='images/egypt_museum-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/egypt_museum-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/egypt_museum-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/egypt_museum-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/egypt_museum-500.jpg') }}"
+              alt="Outside of the pink Egyptian Museum">
+              <figcaption>The Egyptian Museum</figcaption>
             </figure> 
-            <p>The Pyramids of Giza were as impressive as I imagined they would be. I rode a camel to get
-            there and it was honestly dreamlike. We also got to see the Sphinx, which was smaller than I thought it be but impressive
-            nonetheless.</p>
+            <p>We spent our final days in Cairo. Aside from the pyramids (of course), 
+              we visited a bunch of other sites, including Tahrir Square, 
+              which has the Egyptian Museum nearby. It's a pretty huge place 
+              with a crazy number of ancient artifacts.</p>
+            <figure>
+              <img class="vertical" srcset="{{ url_for('static', filename='images/egypt_muhammad_ali-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/egypt_muhammad_ali-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/egypt_muhammad_ali-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/egypt_muhammad_ali-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/egypt_muhammad_ali-375.jpg') }}" 
+              alt="Muhammad Ali Mosque in Cairo">
+              <figcaption>Mosque of Muhammad Ali</figcaption>
+            </figure>
+            <p>The most memorable site of Cairo for me was the Mosque of Muhammad 
+              Ali, in the Saladin Citadel. It was gorgeous and overlooked the city, 
+              so the views were stunning! I could have stayed there forever.</p> 
+            <figure> 
+              <img srcset="{{ url_for('static', filename='images/egypt_pyramid-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/egypt_pyramid-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/egypt_pyramid-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/egypt_pyramid-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/egypt_pyramid-500.jpg') }}"
+              alt="Pyramids of Giza">
+              <figcaption>The sites of Giza - Pyramids and Sphinx</figcaption>
+            </figure> 
+            <p>The Pyramids of Giza were as impressive as I imagined they would be. 
+              I rode a camel to get there and it was honestly dreamlike. We also got 
+              to see the Sphinx, which was smaller than I thought it would be but 
+              impressive nonetheless.</p>
           </div>
         </div> 
       </article>

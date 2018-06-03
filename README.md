@@ -1,5 +1,5 @@
 # Project Title
-This project is called "My Travels" and the aim is to simply familiarize myself with HTML, CSS, Bootstrap, Git, and Sass. I just created a blog with entries on countries I have visited. 
+This project is called "My Travels" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt), CSS (using Sass), and Python (using Flask). This is a blog with entries on countries I have visited. 
 
 # Getting Started
 This isn't meant to be a project for collaboration - more like a way for me to log my frustrations as I go through the process. 
@@ -13,20 +13,37 @@ To simply view:
 - Follow these instructions: https://help.github.com/articles/cloning-a-repository/
 
 # Prerequisites
-You will need a text editor and a working browser. 
+Aside from a working browser, you will also need:
 
-You will also need Sass: https://sass-lang.com/install 
+- Sass: https://sass-lang.com/install 
+- the dependencies in requirements.txt 
 
 ## To build css from scss files
 
 To run Sass from the command line, make sure you're in root directory of repo and execute:
 
-```sass scss/main_updated.scss css/main_updated.css```
+```sass app/static/scss/main.scss app/static/css/main.css```
+
+## To install dependencies in requirements.txt
+
+Make sure you're in root directory of repo and execute:
+
+```pip install -r requirements.txt```
+
+## To actually run website once repo cloned, css compiled, and dependencies installed
+
+- Navigate to root directory
+- Execute: 
+
+```FLASK_APP=mytravels.py```
+
+- Navigate to link provided 
 
 # Built With
-- Visual Studio Code 1.21.1
-- Bootstrap 3.3.7
+- Visual Studio Code 1.23.1
 - Ruby Sass 3.5.6 
+- Flask 1.0.2 (see requirements.txt for extensions used)
+- Grunt 0.4.5 (see package.json)
 
 # Authors
 Satinder Kaur 
