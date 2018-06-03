@@ -16,7 +16,13 @@
               so we'd grown up discussing this trip and were excited when 
               we were finally able to do it together.</p>
             <figure>  
-              <img src="{{ url_for('static', filename='images/egypt_karnak.jpeg') }}" alt="Karnak Temple, Luxor">
+              <img class="vertical" srcset="{{ url_for('static', filename='images/egypt_karnak-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/egypt_karnak-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/egypt_karnak-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/egypt_karnak-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/egypt_karnak-375.jpg') }}"
+              alt="Karnak Temple, Luxor">
               <figcaption>Karnak Temple at night</figcaption>
             </figure> 
             <p>Our first few days were spent in Luxor, visiting ancient sites
@@ -26,7 +32,13 @@
               that had these temples built in their name. I couldn't help but wonder
               what it must have been like to have all that power...</p>
             <figure>
-              <img src="{{ url_for('static', filename='images/egypt_balloon.jpeg') }}" alt="Hot air balloon over Hatshepsut Temple, Luxor">
+              <img class="vertical" srcset="{{ url_for('static', filename='images/egypt_balloon-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/egypt_balloon-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/egypt_balloon-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/egypt_balloon-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/egypt_balloon-375.jpg') }}"
+              alt="Hot air balloon over Hatshepsut Temple, Luxor">
               <figcaption>Hot air balloon over Hatshepsut Temple</figcaption>
             </figure>
             <p>As my friend is fluent in Arabic, we were fortunate enough to
@@ -36,7 +48,13 @@
               also kind enough to welcome us to his home and host us for dinner. 
               The hospitality we experienced was truly something else.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/egypt_alexandria.jpeg') }}" alt="Alexandria coastline">
+              <img srcset="{{ url_for('static', filename='images/egypt_alexandria-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/egypt_alexandria-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/egypt_alexandria-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/egypt_alexandria-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/egypt_alexandria-500.jpg') }}"
+              alt="Alexandria coastline">
               <figcaption>The coastline of Alexandria</figcaption>
             </figure> 
             <p>After Luxor, we spent time with my friend's family in Alexandria. 
@@ -44,7 +62,13 @@
               all over, including to the Citadel of Qaitbay, the Alexandrian library, 
               and to get tea by the sea!</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/egypt_museum.jpeg') }}" alt="Outside of the pink Egyptian Museum">
+              <img srcset="{{ url_for('static', filename='images/egypt_museum-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/egypt_museum-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/egypt_museum-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/egypt_museum-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/egypt_museum-500.jpg') }}"
+              alt="Outside of the pink Egyptian Museum">
               <figcaption>The Egyptian Museum</figcaption>
             </figure> 
             <p>We spent our final days in Cairo. Aside from the pyramids (of course), 
@@ -52,14 +76,26 @@
               which has the Egyptian Museum nearby. It's a pretty huge place 
               with a crazy number of ancient artifacts.</p>
             <figure>
-              <img src="{{ url_for('static', filename='images/egypt_muhammad_ali.jpeg') }}" alt="Muhammad Ali Mosque in Cairo">
+              <img class="vertical" srcset="{{ url_for('static', filename='images/egypt_muhammad_ali-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/egypt_muhammad_ali-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/egypt_muhammad_ali-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/egypt_muhammad_ali-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/egypt_muhammad_ali-375.jpg') }}" 
+              alt="Muhammad Ali Mosque in Cairo">
               <figcaption>Mosque of Muhammad Ali</figcaption>
             </figure>
             <p>The most memorable site of Cairo for me was the Mosque of Muhammad 
               Ali, in the Saladin Citadel. It was gorgeous and overlooked the city, 
               so the views were stunning! I could have stayed there forever.</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/egypt_pyramid.jpeg') }}" alt="Pyramids of Giza">
+              <img srcset="{{ url_for('static', filename='images/egypt_pyramid-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/egypt_pyramid-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/egypt_pyramid-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/egypt_pyramid-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/egypt_pyramid-500.jpg') }}"
+              alt="Pyramids of Giza">
               <figcaption>The sites of Giza - Pyramids and Sphinx</figcaption>
             </figure> 
             <p>The Pyramids of Giza were as impressive as I imagined they would be. 

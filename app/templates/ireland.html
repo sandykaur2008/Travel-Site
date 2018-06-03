@@ -12,7 +12,13 @@
         <div class="row">
           <div class="col-12">
             <figure> 
-              <img src="{{ url_for('static', filename='images/ireland_guinness.jpeg') }}" alt="Guinness Factory">
+              <img srcset="{{ url_for('static', filename='images/ireland_guinness-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/ireland_guinness-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/ireland_guinness-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/ireland_guinness-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/ireland_guinness-500.jpg') }}" 
+              alt="Guinness Factory">
               <figcaption>Entrance to Guinness Factory!</figcaption>
             </figure>
             <p>I went to Ireland while studying abroad in Italy. I mostly stayed 
@@ -22,21 +28,39 @@
               Factory and get tipsy in the middle of the day. It was also really 
               fun to do a pub crawl and meet other tourists enjoying the city.</p> 
             <figure>
-              <img src="{{ url_for('static', filename='images/ireland_gaol.jpeg') }}" alt="Kilmainham Gaol staircase">
+              <img srcset="{{ url_for('static', filename='images/ireland_gaol-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/ireland_gaol-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/ireland_gaol-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/ireland_gaol-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/ireland_gaol-500.jpg') }}" 
+              alt="Kilmainham Gaol staircase">
               <figcaption>Kilmainham Gaol</figcaption>
             </figure> 
             <p>In Dublin, I got to see the Spire and visit Kilmainham Gaol. The 
               latter was as interesting as it was depressing, but I guess that's 
               a normal reaction to a prison.</p> 
             <figure>
-              <img src="{{ url_for('static', filename='images/ireland_st_stephens.jpeg') }}" alt="Feeding Swan, St. Stephens Green">  
-              <figcaption>Feeding Swan!</figcaption>
+              <img srcset="{{ url_for('static', filename='images/ireland_st_stephens-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/ireland_st_stephens-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/ireland_st_stephens-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/ireland_st_stephens-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/ireland_st_stephens-500.jpg') }}" 
+              alt="St. Stephen's Green">  
+              <figcaption>St. Stephen's Green</figcaption>
             </figure>
             <p>St. Stephen's Green was the site that really left an impression on me.
               It was just so pretty, with huge swan that people could feed! It was 
               like something out of a book.</p> 
             <figure>
-              <img src="{{ url_for('static', filename='images/ireland_howth_1.jpeg') }}" alt="Coastline, Howth">
+              <img srcset="{{ url_for('static', filename='images/ireland_howth-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/ireland_howth-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/ireland_howth-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/ireland_howth-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/ireland_howth-500.jpg') }}" 
+              alt="Coastline, Howth">
               <figcaption>Behold the beauty of Howth!</figcaption>
             </figure> 
             <p> I also really liked Howth, which I found to be beautiful. I really wish 

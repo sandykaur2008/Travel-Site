@@ -12,7 +12,13 @@
         <div class="row">
           <div class="col-12">
             <figure> 
-              <img src="{{ url_for('static', filename='images/netherlands_i_am.jpeg') }}" alt="I am Amsterdam sign">
+              <img srcset="{{ url_for('static', filename='images/netherlands_i_am-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/netherlands_i_am-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/netherlands_i_am-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/netherlands_i_am-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/netherlands_i_am-500.jpg') }}" 
+              alt="I am Amsterdam sign">
               <figcaption>The famous "I AM AMSTERDAM" sculpture</figcaption>
             </figure>
             <p>I went to the Netherlands right after my trip to Berlin. I went 
@@ -20,20 +26,38 @@
               Amsterdam better. Our first few days were spent walking around 
               Amsterdam and eating a lot of stroopwafel.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/netherlands_dam.jpeg') }}" alt="Dam Plaza, Amsterdam">
+              <img srcset="{{ url_for('static', filename='images/netherlands_dam-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/netherlands_dam-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/netherlands_dam-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/netherlands_dam-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/netherlands_dam-500.jpg') }}" 
+              alt="Dam Plaza, Amsterdam">
               <figcaption>Dam Plaza</figcaption>
             </figure>
             <p>Dam Plaza was fun to visit, especially since we went shopping at De Bijenkorf.
                I bought many quality presents for my family.</p>
             <figure>
-              <img src="{{ url_for('static', filename='images/netherlands_canals.jpeg') }}" alt="Canals of Amsterdam">
+              <img srcset="{{ url_for('static', filename='images/netherlands_canals-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/netherlands_canals-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/netherlands_canals-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/netherlands_canals-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/netherlands_canals-500.jpg') }}" 
+              alt="Canals of Amsterdam">
               <figcaption>Canals at night</figcaption>
             </figure>
               <p>We often just walked around and took in the city. It was especially 
                 beautiful at night, and there were a few light installations 
                 (I didn't take any worthy pics of those, unfortunately.)</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/netherlands_kinderdijk.jpeg') }}" alt="Windmills of Kinderdijk"> 
+              <img srcset="{{ url_for('static', filename='images/netherlands_kinderdijk-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/netherlands_kinderdijk-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/netherlands_kinderdijk-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/netherlands_kinderdijk-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/netherlands_kinderdijk-500.jpg') }}" 
+              alt="Windmills of Kinderdijk"> 
               <figcaption>Windmills of Kinderdijk</figcaption>
             </figure>
             <p>Other than Amsterdam, the windmills of Kinderdijk  was another 

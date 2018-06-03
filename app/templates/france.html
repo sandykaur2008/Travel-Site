@@ -12,7 +12,13 @@
         <div class="row">       
           <div class="col-12">
             <figure> 
-              <img src="{{ url_for('static', filename='images/france_mont_saint_michel.jpeg') }}" alt="Mont Saint Michel">
+              <img srcset="{{ url_for('static', filename='images/france_mont_saint_michel-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/france_mont_saint_michel-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/france_mont_saint_michel-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/france_mont_saint_michel-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/france_mont_saint_michel-500.jpg') }}"
+              alt="Mont Saint Michel">
               <figcaption>The magical Mont Saint Michel</figcaption>
             </figure>
             <p>I spent 7 months in Saint-L&ocirc;, a small town in Normandy,
@@ -27,21 +33,39 @@
               most memorable site for me was Saint Mont Michel, which is like a 
               disney castle on an island.</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/france_carnac.jpeg') }}" alt="Stones of Carnac, Brittany">
+              <img srcset="{{ url_for('static', filename='images/france_carnac-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/france_carnac-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/france_carnac-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/france_carnac-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/france_carnac-500.jpg') }}"
+              alt="Stones of Carnac, Brittany">
               <figcaption>Carnac</figcaption>
             </figure> 
             <p>In Brittany, I got to see a megalithic site called Carnac. 
               I gotta be honest - I was a little bored! But it was still 
               really nice of my French friends to take me.</p>
             <figure>
-              <img src="{{ url_for('static', filename='images/france_granville.jpeg') }}" alt="Lighthouse of Granville">
+              <img srcset="{{ url_for('static', filename='images/france_granville-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/france_granville-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/france_granville-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/france_granville-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/france_granville-500.jpg') }}"
+              alt="Lighthouse of Granville">
               <figcaption>Lighthouse at Granville</figcaption>
             </figure>
               <p>I was, however, blown away by Granville, also in Brittany. 
                 It's a gorgeous coastal town with an adorable lighthouse. 
                 I wouldn't mind living there at all! *Sigh*</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/france_eglise.jpeg') }}" alt="Church in Saint Lo, Normandy">
+              <img srcset="{{ url_for('static', filename='images/france_eglise-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/france_eglise-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/france_eglise-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/france_eglise-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/france_eglise-500.jpg') }}"
+              alt="Church in Saint Lo, Normandy">
               <figcaption>The historic Roman Catholic church in Saint-L&ocirc;.</figcaption>
             </figure> 
             <p>Saint-L&ocirc; itself was a place I easily grew to love. 
@@ -51,7 +75,13 @@
               still speak about WWII and it was something I found myself talking 
               about more often than expected.</p> 
             <figure>     
-              <img src="{{ url_for('static', filename='images/france_eiffel.jpeg') }}" alt="Eiffel Tower at night">
+              <img srcset="{{ url_for('static', filename='images/france_eiffel-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/france_eiffel-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/france_eiffel-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/france_eiffel-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/france_eiffel-500.jpg') }}"
+              alt="Eiffel Tower at night">
               <figcaption>Eiffel Tower</figcaption>
             </figure> 
             <p>While in France I of course visited Paris a number of times! I 
@@ -60,7 +90,13 @@
               magical, as it not only looked amazing all lit up but also "sparkled" 
               on the hour.</p>
             <figure>
-              <img src="{{ url_for('static', filename='images/france_louvre.jpeg') }}" alt="Louvre Pyramid">
+              <img srcset="{{ url_for('static', filename='images/france_louvre-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/france_louvre-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/france_louvre-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/france_louvre-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/france_louvre-500.jpg') }}"
+              alt="Louvre Pyramid">
               <figcaption>The Louvre</figcaption>
             </figure>
             <p>I remember the Louvre mostly as a massive place that requires a few 

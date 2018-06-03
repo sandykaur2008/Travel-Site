@@ -7,3 +7,5 @@ app/__pycache__
 __pycache__
 tests/__pycache__
 logs/
+app/static/images_src
+node_modules/

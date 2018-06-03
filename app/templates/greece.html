@@ -12,7 +12,13 @@
         <div class="row">
           <div class="col-12">
             <figure>  
-              <img src="{{ url_for('static', filename='images/greece_mills.jpeg') }}" alt="Classic windmills, Rhodes">
+              <img srcset="{{ url_for('static', filename='images/greece_mills-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/greece_mills-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/greece_mills-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/greece_mills-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/greece_mills-500.jpg') }}" 
+              alt="Classic windmills, Rhodes">
               <figcaption>Classic stone windmills in Rhodes</figcaption>
             </figure>
             <p>I went to Greece while I was studying abroad in Italy. I went on 
@@ -23,21 +29,39 @@
               next 3 bored out of my mind. Still, I'm glad I went and had the 
               experience. After all, I learned how to not travel!</p> 
             <figure>
-              <img src="{{ url_for('static', filename='images/greece_palace.jpeg') }}" alt="Palace of the Grand Master of the Knights of Rhodes">
+              <img srcset="{{ url_for('static', filename='images/greece_palace-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/greece_palace-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/greece_palace-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/greece_palace-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/greece_palace-500.jpg') }}" 
+              alt="Palace of the Grand Master of the Knights of Rhodes">
               <figcaption>Old Town's Palace of the Grand Master of the Knights of Rhodes</figcaption>
             </figure> 
             <p>I visited the Old Town neighborhood, which had the really cool 
               Palace of the Grand Master of the Knights of Rhodes, which was 
               surrounded by people and clearly very popular.</p>
             <figure>
-              <img src="{{ url_for('static', filename='images/greece_mosque.jpeg') }}" alt="Mosque in old town of Rhodes">
+              <img class="vertical" srcset="{{ url_for('static', filename='images/greece_mosque-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/greece_mosque-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/greece_mosque-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/greece_mosque-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/greece_mosque-375.jpg') }}" 
+              alt="Mosque in old town of Rhodes">
               <figcaption>Old Town's Suleymaniye Mosque</figcaption>
             </figure>
               <p>I also saw the really old Turkish mosque known as the Suleymaniye 
                 Mosque. I didn't get to go inside, but it was cool to learn about 
                 and was very pretty.</p>
             <figure>
-              <img src="{{ url_for('static', filename='images/greece_acropolis_1.jpeg') }}" alt="Acropolis on island of Rhodes">
+              <img srcset="{{ url_for('static', filename='images/greece_acropolis-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/greece_acropolis-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/greece_acropolis-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/greece_acropolis-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/greece_acropolis-500.jpg') }}" 
+              alt="Acropolis on island of Rhodes">
               <figcaption>Acropolis of Rhodes</figcaption>
             </figure> 
             <p>My other adventures in Rhodes led me to the Acropolis  and to a really 

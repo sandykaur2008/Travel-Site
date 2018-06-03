@@ -12,7 +12,13 @@
         <div class="row"> 
           <div class="col-12">
             <figure> 
-              <img src="{{ url_for('static', filename='images/india_golden_temple.jpeg') }}" alt="Golden Temple, Amritsar">
+              <img srcset="{{ url_for('static', filename='images/india_golden_temple-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/india_golden_temple-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/india_golden_temple-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/india_golden_temple-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/india_golden_temple-500.jpg') }}" 
+              alt="Golden Temple, Amritsar">
               <figcaption>Golden Temple in Amritsar, Punjab</figcaption>
             </figure>
             <p>India is a place I really haven't explored. I have been there 
@@ -22,7 +28,13 @@
               times, but I would like to see and do more in India. I hope to one
               day take a really long tour of the whole country!</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/india_golgappa.jpeg') }}" alt="Golgappa, delicious snack">
+              <img srcset="{{ url_for('static', filename='images/india_golgappa-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/india_golgappa-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/india_golgappa-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/india_golgappa-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/india_golgappa-500.jpg') }}" 
+              alt="Golgappa, delicious snack">
               <figcaption>Golgappa, a delicious treat</figcaption>
             </figure>
             <p>In terms of what I <em>have</em> experienced in India, I can say 
@@ -30,7 +42,13 @@
               the last time I was there (in the city of Ludhiana) was Golgappa. 
               God, I ate so many. It was blissful.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/india_women.jpeg') }}" alt="Women from Rajasthan in traditional clothing">
+              <img srcset="{{ url_for('static', filename='images/india_women-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/india_women-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/india_women-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/india_women-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/india_women-500.jpg') }}" 
+              alt="Women from Rajasthan in traditional clothing">
               <figcaption>Women in Rajasthani dress.</figcaption>
             </figure> 
             <p>The last time I went I was lucky enough to experience some new 
@@ -39,8 +57,14 @@
               (again, we were stuck in someone's house), I did get to see 
               traditional Rajasthani dress, which was striking.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/india_mustard_field.jpeg') }}" alt="Mustard field in Punjab">
-              <figcaption>It's me, in a mustard field!</figcaption>
+              <img srcset="{{ url_for('static', filename='images/india_mustard_field-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/india_mustard_field-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/india_mustard_field-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/india_mustard_field-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/india_mustard_field-500.jpg') }}"
+              alt="Mustard field in Punjab">
+              <figcaption>A beautiful mustard field!</figcaption>
             </figure>
             <p>I also got to see a lot of farmland, including mustard fields 
               which were so pretty as to look photoshopped in pictures. I 

@@ -12,7 +12,13 @@
         <div class="row">
           <div class="col-12">           
             <figure> 
-              <img src="{{ url_for('static', filename='images/germany_wall_1.jpeg') }}" alt="Piece of Berlin wall">
+              <img srcset="{{ url_for('static', filename='images/germany_wall-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/germany_wall-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/germany_wall-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/germany_wall-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/germany_wall-500.jpg') }}"
+              alt="Piece of Berlin wall">
               <figcaption>Berlin Wall Today</figcaption>
             </figure> 
             <p>I visited Berlin while I was working in France. My friend and I 
@@ -22,19 +28,37 @@
               really liked that pieces of it were dispersed throughout the city. 
               It was actually pretty moving to look at and reflect on.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/germany_holocaust_memorial.jpeg') }}" alt="Berlin's Holocaust Museum"> 
+              <img srcset="{{ url_for('static', filename='images/germany_holocaust_memorial-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/germany_holocaust_memorial-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/germany_holocaust_memorial-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/germany_holocaust_memorial-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/germany_holocaust_memorial-500.jpg') }}"
+              alt="Berlin's Holocaust Museum"> 
               <figcaption>The Holocaust Memorial</figcaption>  
             </figure>
             <p>I felt similarly about the Holocaust Memorial, which was sobering 
               to walk around in.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/germany_currywurst.jpeg') }}" alt="Currywurst - sausage with ketchup">
+              <img srcset="{{ url_for('static', filename='images/germany_currywurst-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/germany_currywurst-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/germany_currywurst-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/germany_currywurst-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/germany_currywurst-500.jpg') }}"
+              alt="Currywurst - sausage with ketchup">
               <figcaption>Mmm, Currywurst *drool*</figcaption>
             </figure>
             <p>One thing I remember most about my trip to Berlin is currywurst - 
               I ate so much I thought I was going to be sick. I regret nothing!</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/germany_brandenburg_gate.jpeg') }}" alt="Brandenburg Gate, Berlin">
+              <img srcset="{{ url_for('static', filename='images/germany_brandenburg_gate-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/germany_brandenburg_gate-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/germany_brandenburg_gate-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/germany_brandenburg_gate-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/germany_brandenburg_gate-500.jpg') }}"
+              alt="Brandenburg Gate, Berlin">
               <figcaption>The Brandenburg Gate</figcaption>
             </figure>
             <p>We ended up spending the New Year in Berlin, which was a little 

@@ -12,7 +12,13 @@
         <div class="row">
           <div class="col-12">
             <figure> 
-              <img src="{{ url_for('static', filename='images/uk_tower_bridge.jpeg') }}" alt="Tower Bridge, London">
+              <img srcset="{{ url_for('static', filename='images/uk_tower_bridge-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/uk_tower_bridge-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/uk_tower_bridge-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/uk_tower_bridge-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/uk_tower_bridge-500.jpg') }}" 
+              alt="Tower Bridge, London">
               <figcaption>My favorite site in London - Tower Bridge</figcaption>
             </figure>
             <p>If you know me, you know I am a bit of an Anglophile. I LOVE British 
@@ -21,14 +27,26 @@
               I just had a really good day when we visited, and so I always think of 
               it fondly!</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/uk_brighton.jpeg') }}" alt="The beach, Brighton, England">
+              <img srcset="{{ url_for('static', filename='images/uk_brighton-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/uk_brighton-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/uk_brighton-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/uk_brighton-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/uk_brighton-500.jpg') }}" 
+              alt="The beach, Brighton, England">
               <figcaption>The beach in Brighton</figcaption>
             </figure>
             <p> The last time I went to the UK, however, we focused on places other 
               than London. I went down to Brighton, where I would also love to live, 
               it's such a pleasant place!</p> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/uk_liverpool.jpeg') }}" alt="Liverpool's Crosby Beach, with sculpture'">
+              <img class="vertical" srcset="{{ url_for('static', filename='images/uk_liverpool-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/uk_liverpool-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/uk_liverpool-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/uk_liverpool-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/uk_liverpool-375.jpg') }}"
+              alt="Liverpool's Crosby Beach, with sculpture'">
               <figcaption>The beautiful Crosby Beach, Liverpool</figcaption>
             </figure>
             <p>We also went further north and visited Liverpool, where I was bowled over
@@ -36,7 +54,13 @@
               beach after the sun had just set, and it was something to behold. 
               I would love to visit again and again at different times of the day.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/uk_balmoral_hotel_1.jpeg') }}" alt="Balmoral Hotel">
+              <img srcset="{{ url_for('static', filename='images/uk_balmoral_hotel-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/uk_balmoral_hotel-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/uk_balmoral_hotel-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/uk_balmoral_hotel-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/uk_balmoral_hotel-500.jpg') }}" 
+              alt="Balmoral Hotel">
               <figcaption>Balmoral Hotel in Edinburgh</figcaption>
             </figure>
             <p>From Liverpool, we went further north to Scotland. I got to visit Glasgow 

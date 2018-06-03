@@ -12,7 +12,13 @@
         <div class="row">
           <div class="col-12"> 
             <figure> 
-              <img src="{{ url_for('static', filename='images/canada_cn_tower.jpeg') }}" alt="CN Tower, Toronto">
+              <img srcset="{{ url_for('static', filename='images/canada_cn_tower-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/canada_cn_tower-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/canada_cn_tower-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/canada_cn_tower-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/canada_cn_tower-500.jpg') }}"
+              alt="CN Tower, Toronto">
               <figcaption>A view of CN Tower</figcaption>
             </figure> 
             <p>I have spent many summers in Canada, as I have extensive family
@@ -20,7 +26,13 @@
               onto the glass floor at CN Tower - I remember being frightened but 
               also thrilled!</p> 
             <figure>
-              <img src="{{ url_for('static', filename='images/canada_vancouver_skyline.jpeg') }}" alt="Vancouver skyline">
+              <img srcset="{{ url_for('static', filename='images/canada_vancouver_skyline-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/canada_vancouver_skyline-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/canada_vancouver_skyline-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/canada_vancouver_skyline-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/canada_vancouver_skyline-500.jpg') }}"
+              alt="Vancouver skyline">
               <figcaption>View of Vancouver skyline.</figcaption>
             </figure> 
             <p>When in Canada, I am usually on the West Coast, in Vancouver. 
@@ -29,13 +41,25 @@
               it's also pretty chill. Still, it's always nice to go back to 
               family in Vancouver and get reconnected with the rest of the world!</p> 
               <figure> 
-                <img src="{{ url_for('static', filename='images/canada_stanley_park.jpeg') }}" alt="Totem Poles at Stanley Park, Vancouver">
+                <img srcset="{{ url_for('static', filename='images/canada_stanley_park-1600.jpg') }} 1600w,
+                {{ url_for('static', filename='images/canada_stanley_park-1000.jpg') }} 1000w,
+                {{ url_for('static', filename='images/canada_stanley_park-800.jpg') }} 800w,
+                {{ url_for('static', filename='images/canada_stanley_park-500.jpg') }} 500w"
+                sizes="(min-width: 750px) 800px, 500px"
+                src="{{ url_for('static', filename='images/canada_stanley_park-500.jpg') }}"
+                alt="Totem Poles at Stanley Park, Vancouver">
                 <figcaption>Totem Poles in Stanley Park</figcaption>
               </figure>
               <p>One site I've visited many times with family is Stanley Park. I love 
                 looking at the Totem Poles and taking in all the details.</p>
             <figure> 
-              <img src="{{ url_for('static', filename='images/canada_mont_tremblant.jpeg') }}" alt="Mountains in Quebec, Mont Tremblant">
+              <img srcset="{{ url_for('static', filename='images/canada_mont_tremblant-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/canada_mont_tremblant-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/canada_mont_tremblant-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/canada_mont_tremblant-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/canada_mont_tremblant-500.jpg') }}" 
+              alt="Mountains in Quebec, Mont Tremblant">
               <figcaption>The countryside at Mont Tremblant</figcaption>
             </figure> 
             <p>I would love to visit other parts of Canada, like Nova Scotia. 
