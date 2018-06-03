@@ -35,7 +35,7 @@ Make sure you're in root directory of repo and execute:
 - Navigate to root directory
 - Execute: 
 
-```FLASK_APP=mytravels.py```
+```export FLASK_APP=mytravels.py```
 
 - Navigate to link provided 
 
