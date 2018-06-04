@@ -36,6 +36,7 @@ Make sure you're in root directory of repo and execute:
 - Execute: 
 
 ```export FLASK_APP=mytravels.py```
+
 ```flask run```
 
 - Navigate to link provided 
