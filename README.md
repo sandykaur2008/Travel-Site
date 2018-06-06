@@ -55,3 +55,5 @@ Just a note on images - images that are not originally mine are free for use and
 
 # Acknowledgments
 Thanks, @github/markalexandercastillo, for reviewing and giving me tips! :relaxed: 
+
+Also, relied heavily on https://blog.miguelgrinberg.com/
