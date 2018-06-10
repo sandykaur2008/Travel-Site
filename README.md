@@ -1,4 +1,4 @@
-# Project Title
+# My Travels
 This project is called "My Travels" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt), CSS (using Sass), and Python (using Flask). This is a blog with entries on countries I have visited. 
 
 # Getting Started
