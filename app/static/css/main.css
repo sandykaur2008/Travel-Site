@@ -184,7 +184,7 @@ html, body {
   width: 100%; }
 
 /*header and footer*/
-li.fas:before {
+fas:before {
   color: white; }
 
 header, footer {
@@ -210,12 +210,12 @@ header {
     header .title:hover {
       color: white;
       text-decoration: underline; }
-  @media screen and (max-width: 767px) {
-    header li {
-      display: none; } }
   header ul {
     float: right;
     list-style-type: none; }
+    @media screen and (max-width: 658px) {
+      header ul {
+        display: none; } }
 
 /*main & h#*/
 h2 {
