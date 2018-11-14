@@ -18,9 +18,14 @@ def about():
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
+    if app.config['TESTING'] == True:
+      recipient = 'test@example.com'
+    else: 
+      recipient = 'sandykaur2008@gmail.com'
+      
     if form.validate_on_submit():
-        send_email('My Travels - Feedback', sender=app.config['MAIL_USERNAME'],
-        recipients=['sandykaur2008@gmail.com'], text_body="""
+        send_email('My Travels - Feedback', sender='{}'.format(form.email.data),
+        recipient=recipient, text_body="""
         From: {} <{}>
         {}
         """.format(form.name.data, form.email.data, form.text.data))
