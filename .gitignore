@@ -4,6 +4,7 @@ venv
 MyTravels.code-workspace
 .env
 app/__pycache__
+app/__init__.pyc
 __pycache__
 tests/__pycache__
 logs/
