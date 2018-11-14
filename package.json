@@ -10,6 +10,8 @@
     "grunt-responsive-images": "^0.1.4"
   },
   "dependencies": {
+    "debug": "^4.1.0",
+    "lodash": "^4.17.11",
     "minimatch": "^3.0.4"
   }
 }
