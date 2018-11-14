@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 html,
 body {
   height: 100%;
@@ -185,8 +184,7 @@ html, body {
   width: 100%; }
 
 /*header and footer*/
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+[class*="fas fa-"]:before {
   color: white; }
 
 header, footer {
