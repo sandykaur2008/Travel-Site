@@ -10,6 +10,6 @@
     "grunt-responsive-images": "^0.1.4"
   },
   "dependencies": {
-    "grunt-responsive-images": "^0.1.6"
+    "minimatch": "^3.0.4"
   }
 }
