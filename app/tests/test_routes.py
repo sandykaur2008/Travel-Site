@@ -19,13 +19,6 @@ class Routes(unittest.TestCase):
         self.assertEqual(response2.status_code, 200)
         self.assertEqual(response3.status_code, 200)
     
-    def test_302(self):
-        response = self.client.post('/contact', data={
-            'text': 'some text',
-            'email': 'ex@example.com',
-            'name': 'some name'}, follow_redirects=False)
-        self.assertEqual(response.status_code, 302)
-
     def test_404(self):
         response = self.client.get('/doesntexist')
         self.assertEqual(response.status_code, 404)
