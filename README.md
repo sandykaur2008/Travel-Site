@@ -1,5 +1,5 @@
 # My Travels
-This project is called "My Travels" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt), CSS (using Sass), and Python (using Flask). This is a blog with entries on countries I have visited. 
+This project is called "My Travels" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt and GraphicsMagick), CSS (using Sass and Simple Grid), and Python (using Flask). This is a blog with entries on countries I have visited. 
 
 # Getting Started
 This isn't meant to be a project for collaboration - more like a way for me to log my frustrations as I go through the process. 
@@ -13,7 +13,7 @@ To simply view:
 - Follow these instructions: https://help.github.com/articles/cloning-a-repository/
 
 # Prerequisites
-Aside from a working browser, you will also need:
+Aside from a working browser and Python 3, you will also need:
 
 - Sass: https://sass-lang.com/install 
 - the dependencies in requirements.txt 
@@ -45,7 +45,7 @@ Make sure you're in root directory of repo and execute:
 - Visual Studio Code 1.23.1
 - Ruby Sass 3.5.6 
 - Flask 1.0.2 (see requirements.txt for extensions used)
-- Grunt 0.4.5 (see package.json)
+- Grunt 0.4.5 
 
 # Authors
 Satinder Kaur 
@@ -56,4 +56,4 @@ Just a note on images - images that are not originally mine are free for use and
 # Acknowledgments
 Thanks, @github/markalexandercastillo, for reviewing and giving me tips! :relaxed: 
 
-Also, relied heavily on https://blog.miguelgrinberg.com/
+Also, found https://blog.miguelgrinberg.com/ very helpful! 

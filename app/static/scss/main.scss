@@ -1,0 +1,198 @@
+// imports
+@import 'grid/simple-grid';
+
+//mixins
+@mixin text-align($x: center) {
+    text-align: $x;
+}
+
+@mixin display($x: block) {
+    display: $x;
+}
+
+@mixin color($x: white) {
+    color: $x;
+}
+
+@mixin respond-to($val, $query) {
+    @media screen and ($val: $query) {
+        @content;
+    }
+}
+
+/* html and body*/
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/*header and footer*/
+li.fas:before {
+    color: white;
+}
+
+header, footer {
+    background-color: black; 
+    li {
+        @include display(inline);
+        margin-left: 1em;
+    }
+    a {
+        @include color;
+        padding: 0.5em;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline; 
+        }
+    }
+}
+
+/*header*/ 
+header {
+    height: 20%; 
+    padding-top: 3%;
+    .title {
+        font-size: 3em; 
+        text-decoration: none;
+        @include color;
+        &:hover {
+            @include color;
+            text-decoration: underline; 
+        }
+    }
+    ul {
+      @include respond-to(max-width, 658px) {
+        @include display(none);
+    }
+      float: right;
+      list-style-type: none;
+    }
+}
+
+/*main & h#*/
+h2 {
+    font-size: 2em;
+    @include text-align;
+}
+
+h3 {
+    font-size: 1em;
+    text-align: center;
+}
+
+main {
+    min-height: 74%;
+    padding-bottom: 5%;
+}
+
+/*content*/
+figure {
+    max-width: 50em;
+}
+
+img.index {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.col-4 a {
+    @include respond-to(max-width, 719px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+div.col-12 {
+    @include text-align;
+    &.contact {
+        @include text-align(left);
+    }
+    &.left {
+        @include text-align(left);
+    }
+}
+
+section a {
+    @include color(black);
+    text-decoration: none;
+    @include display(inline-block);
+    &:hover {
+        @include color(black);
+        text-decoration: underline; 
+    }
+}
+
+section h3 {
+    @include respond-to(max-width, 991px) {
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+}
+
+.row {
+    padding-bottom: 1.6%; 
+    @include respond-to(max-width, 991px) {
+        padding-bottom: 0;
+    }
+}
+
+.country-page {
+    figcaption {
+        padding-bottom: 1.6%; 
+        padding-top: 0.3%;
+        font-style: italic; 
+    }
+    img {
+        padding-top: 0.4%; 
+        max-width: 100%;
+        @include display();
+        margin-left: auto;
+        margin-right: auto;
+        @include respond-to(max-width, 749px) {
+            width: 500px;
+        }
+        @include respond-to(min-width, 750px) {
+            width: 800px;
+        }
+        &.vertical {
+            @include respond-to(max-width, 749px) {
+                width: 375px;
+            }
+            @include respond-to(min-width, 750px) {
+                width: 600px;
+            }
+        }
+    }
+    p {
+        padding-bottom: 2.4%;
+        @include text-align(left);
+    }
+}
+
+/*footer*/
+footer {
+    position: relative;
+    min-height: 3.5em;
+} 
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Forms and messages*/ 
+span.error {
+    @include color(red);
+}
+
+ul.message-ul {
+    list-style-type: none;
+}
+
+li.message-li {
+    @include color(blue); 
+}
