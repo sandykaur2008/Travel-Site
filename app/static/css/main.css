@@ -178,6 +178,10 @@ p {
 
   .hidden-sm {
     display: block; } }
+/* all */
+* {
+  color: white; }
+
 /* html and body*/
 html, body {
   height: 100%;
@@ -188,7 +192,7 @@ li.fas:before {
   color: white; }
 
 header, footer {
-  background-color: black; }
+  background-color: #292f33; }
   header li, footer li {
     display: inline;
     margin-left: 1em; }
@@ -228,7 +232,8 @@ h3 {
 
 main {
   min-height: 74%;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  background-color: #292f33; }
 
 /*content*/
 figure {
@@ -238,7 +243,8 @@ img.index {
   max-width: 100%;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  border-radius: 12px; }
 
 @media screen and (max-width: 719px) {
   div.col-4 a {
@@ -254,11 +260,11 @@ div.col-12 {
     text-align: left; }
 
 section a {
-  color: black;
+  color: white;
   text-decoration: none;
   display: inline-block; }
   section a:hover {
-    color: black;
+    color: white;
     text-decoration: underline; }
 
 @media screen and (max-width: 991px) {
@@ -277,6 +283,7 @@ section a {
   padding-top: 0.3%;
   font-style: italic; }
 .country-page img {
+  border-radius: 12px;
   padding-top: 0.4%;
   max-width: 100%;
   display: block;
