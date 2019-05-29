@@ -2,35 +2,8 @@
 
 {% block content %}
   <main>
-    <div class="container">
-      <section>
-        <div class="row">
-          <div class="col-12">
-            <h2>Asia</h2>
-          </div>
-        </div>
-        <div class="row">
-          <article>
-            <div class="col-4">
-              <a href="{{ url_for('india') }}">
-                <img class="index"
-                srcset="{{ url_for('static', filename='images/india_mustard_field-500.jpg') }},
-                {{ url_for('static', filename='images/india_mustard_field-1000.jpg') }} 2x"
-                src="{{ url_for('static', filename='images/india_mustard_field-500.jpg') }}"
-                alt="Mustard Field in India">
-                <h3>India</h3> 
-              </a>
-            </div>
-          </article> 
-        </div> 
-      </section>
-      <section>
-        <div class="row">
-          <div class="col-12">
-            <h2>Americas</h2>
-          </div>
-        </div>
-        <div class="row">      
+    <div class="container">   
+      <div class="row">  
           <article>       
             <div class="col-4">
               <a href="{{ url_for('argentina') }}">
@@ -56,24 +29,17 @@
             </div>
           </article>
           <article>
-            <div class="col-4">
-              <a href="{{ url_for('uruguay') }}">
+            <div class="col-4"> 
+              <a href="{{ url_for('egypt') }}">
                 <img class="index"
-                srcset="{{ url_for('static', filename='images/uruguay_green_building-500.jpg') }},
-                {{ url_for('static', filename='images/uruguay_green_building-1000.jpg') }} 2x"
-                src="{{ url_for('static', filename='images/uruguay_green_building-500.jpg') }}"
-                alt="Cool green building in Uruguay">
-                <h3>Uruguay</h3>
+                srcset="{{ url_for('static', filename='images/egypt_pyramid-500.jpg') }},
+                {{ url_for('static', filename='images/egypt_pyramid-1000.jpg') }} 2x"
+                src="{{ url_for('static', filename='images/egypt_pyramid-500.jpg') }}"
+                alt="Pyramids of Giza">
+                <h3>Egypt</h3>
               </a>
-            </div> 
+            </div>
           </article>
-        </div> 
-      </section>
-      <section>
-        <div class="row">
-          <div class="col-12"> 
-            <h2>Europe (yes, I'm including the UK)</h2>
-          </div>
         </div>
         <div class="row">
           <article>
@@ -112,8 +78,20 @@
               </a>
             </div>
           </article>
-        </div> 
-        <div class="row"> 
+        </div>
+        <div class="row">
+          <article>
+            <div class="col-4">
+              <a href="{{ url_for('india') }}">
+                <img class="index"
+                srcset="{{ url_for('static', filename='images/india_mustard_field-500.jpg') }},
+                {{ url_for('static', filename='images/india_mustard_field-1000.jpg') }} 2x"
+                src="{{ url_for('static', filename='images/india_mustard_field-500.jpg') }}"
+                alt="Mustard Field in India">
+                <h3>India</h3> 
+              </a>
+            </div>
+          </article> 
           <article>
             <div class="col-4">     
               <a href="{{ url_for('ireland') }}">
@@ -138,20 +116,8 @@
               </a>
             </div>
           </article>
-          <article>   
-            <div class="col-4"> 
-              <a href="{{ url_for('netherlands') }}">
-                <img class="index"
-                srcset="{{ url_for('static', filename='images/netherlands_i_am-500.jpg') }},
-                {{ url_for('static', filename='images/netherlands_i_am-1000.jpg') }} 2x"
-                src="{{ url_for('static', filename='images/netherlands_i_am-500.jpg') }}"
-                alt="I AM NETHERLANDS Sign">
-                <h3>The Netherlands</h3>
-              </a>
-            </div>
-          </article>
-        </div>   
-        <div class="row"> 
+        </div>
+        <div class="row">
           <article>
             <div class="col-4"> 
               <a href="{{ url_for('spain') }}">
@@ -161,6 +127,18 @@
                 src="{{ url_for('static', filename='images/spain_sagrada_familia-500.jpg') }}"
                 alt="Sagrada Familia in Barcelona">
                 <h3>Spain</h3>
+              </a>
+            </div>
+          </article>
+          <article>   
+            <div class="col-4"> 
+              <a href="{{ url_for('netherlands') }}">
+                <img class="index"
+                srcset="{{ url_for('static', filename='images/netherlands_i_am-500.jpg') }},
+                {{ url_for('static', filename='images/netherlands_i_am-1000.jpg') }} 2x"
+                src="{{ url_for('static', filename='images/netherlands_i_am-500.jpg') }}"
+                alt="I AM NETHERLANDS Sign">
+                <h3>The Netherlands</h3>
               </a>
             </div>
           </article>
@@ -176,29 +154,21 @@
               </a> 
             </div>
           </article> 
-        </div>  
-      </section>
-      <section>
-        <div class="row"> 
-          <div class="col-12">
-            <h2>Northern Africa</h2>
-          </div>
         </div>
         <div class="row">
           <article>
-            <div class="col-4"> 
-              <a href="{{ url_for('egypt') }}">
+            <div class="col-4">
+              <a href="{{ url_for('uruguay') }}">
                 <img class="index"
-                srcset="{{ url_for('static', filename='images/egypt_pyramid-500.jpg') }},
-                {{ url_for('static', filename='images/egypt_pyramid-1000.jpg') }} 2x"
-                src="{{ url_for('static', filename='images/egypt_pyramid-500.jpg') }}"
-                alt="Pyramids of Giza">
-                <h3>Egypt</h3>
+                srcset="{{ url_for('static', filename='images/uruguay_green_building-500.jpg') }},
+                {{ url_for('static', filename='images/uruguay_green_building-1000.jpg') }} 2x"
+                src="{{ url_for('static', filename='images/uruguay_green_building-500.jpg') }}"
+                alt="Cool green building in Uruguay">
+                <h3>Uruguay</h3>
               </a>
-            </div>
+            </div> 
           </article>
         </div>  
-      </section> 
-    </div>
+      </div>
   </main> 
 {% endblock %}

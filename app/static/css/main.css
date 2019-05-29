@@ -259,16 +259,16 @@ div.col-12 {
   div.col-12.left {
     text-align: left; }
 
-section a {
+article a {
   color: white;
   text-decoration: none;
   display: inline-block; }
-  section a:hover {
+  article a:hover {
     color: white;
     text-decoration: underline; }
 
 @media screen and (max-width: 991px) {
-  section h3 {
+  article h3 {
     padding-top: 1%;
     padding-bottom: 2%; } }
 
