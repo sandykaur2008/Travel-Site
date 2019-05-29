@@ -325,4 +325,7 @@ ul.message-ul {
 li.message-li {
   color: blue; }
 
+input#submit {
+  background-color: grey; }
+
 /*# sourceMappingURL=main.css.map */

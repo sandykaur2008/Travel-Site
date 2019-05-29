@@ -204,3 +204,7 @@ ul.message-ul {
 li.message-li {
     @include color(blue); 
 }
+
+input#submit {
+  background-color: grey;
+}
