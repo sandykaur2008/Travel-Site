@@ -193,16 +193,21 @@ footer {
 }
 
 /*Forms and messages*/ 
+input, textarea {
+    @include color(black); 
+}
+
 span.error {
     @include color(red);
 }
 
 ul.message-ul {
     list-style-type: none;
+    background-color: black;
 }
 
 li.message-li {
-    @include color(blue); 
+    @include color; 
 }
 
 input#submit {

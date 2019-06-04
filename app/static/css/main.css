@@ -316,14 +316,18 @@ footer {
   width: 100%; }
 
 /*Forms and messages*/
+input, textarea {
+  color: black; }
+
 span.error {
   color: red; }
 
 ul.message-ul {
-  list-style-type: none; }
+  list-style-type: none;
+  background-color: black; }
 
 li.message-li {
-  color: blue; }
+  color: white; }
 
 input#submit {
   background-color: grey; }
