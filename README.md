@@ -1,5 +1,6 @@
 # My Travels
 This project is called "My Travels" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt and GraphicsMagick), CSS (using Sass and Simple Grid), and Python (using Flask). This is a blog with entries on countries I have visited. It is Dockerized and deployed with Amazon Fargate at https://spk.sandytravelstheuniverse.com.
+Static resources are served via Amazon S3 buckets. 
 
 # Getting Started
 
